@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: 326 100% 59%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 260 100% 75%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 240 5% 20%;
+  --muted-foreground: 240 4% 60%;
+  --accent: 280 100% 65%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 4% 30%;
+  --input: 240 4% 30%;
+  --ring: 326 100% 59%;
+  --background: 265 82% 12%;
+  --foreground: 0 0% 98%;
+  --card: 265 82% 12%;
+  --card-foreground: 0 0% 98%;
+  --popover: 265 82% 12%;
+  --popover-foreground: 0 0% 98%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-[#0D051F] text-white;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.glass-card {
+  @apply bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl shadow-purple-500/10;
+}
+
+.neon-text {
+  text-shadow:
+    0 0 5px rgba(192, 72, 255, 0.8),
+    0 0 10px rgba(192, 72, 255, 0.8),
+    0 0 20px rgba(192, 72, 255, 0.6),
+    0 0 40px rgba(192, 72, 255, 0.4);
+}
+
+.neon-button {
+  @apply shadow-[0_0_15px_rgba(217,70,239,0.5),_0_0_30px_rgba(217,70,239,0.3)] transition-all duration-300;
+}
+.neon-button:hover {
+  @apply shadow-[0_0_25px_rgba(217,70,239,0.8),_0_0_50px_rgba(217,70,239,0.5)];
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #f87171, #fb923c, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tech-grid-background {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
