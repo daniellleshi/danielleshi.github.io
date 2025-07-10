@@ -3,10 +3,12 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://daniellleshi.github.io/daniellleshi",
   "scripts": {
     "dev": "vite",
-    "build": "node tools/generate-llms.js || true && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -45,6 +47,7 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "terser": "^5.39.0",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "gh-pages": "^6.0.0"
   }
 }
