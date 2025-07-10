@@ -223,6 +223,6 @@ export default defineConfig({
 	}
 });
 export default defineConfig({
-  base: '/danielleshi.github.io/',
+  base: '/danielleshi/',
   plugins: [react()],
 }
